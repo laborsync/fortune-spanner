@@ -1,0 +1,42 @@
+{
+  "name": "fortune-spanner",
+  "version": "1.0.0",
+  "description": "Google Spanner adapter for Fortune.js",
+  "main": "./lib/index.js",
+  "scripts": {
+    "lint": "eslint lib",
+    "test": "npm run lint && node test",
+    "test:only": "node test",
+    "sample": "node sample.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laborsync/fortune-spanner.git"
+  },
+  "author": "Labor Sync LLC",
+  "license": "MIT",
+  "keywords": [
+    "fortunejs",
+    "fortune",
+    "spanner",
+    "adapter"
+  ],
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "fortune": "^5.4.1",
+    "tapdance": "^5.0.4"
+  },
+  "eslintConfig": {
+    "extends": "boss",
+    "rules": {
+      "strict": 0
+    }
+  },
+  "files": [
+    "lib/",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@google-cloud/spanner": "^0.8.0"
+  }
+}
